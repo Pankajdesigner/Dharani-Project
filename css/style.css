@@ -14,6 +14,9 @@ a, a:hover, a:focus{
 }
 .mobile-header .right-controls{
     margin-left: auto;
+    width: 88px;
+    max-width: 88px;
+    min-width: 88px;
 }
 .mobile-header .right-controls a{
     margin: 0;
@@ -30,6 +33,9 @@ a, a:hover, a:focus{
     font-weight: 500;
     margin: 0;
     font-size: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .content-wrapper{
     padding: 10px;
