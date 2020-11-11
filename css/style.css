@@ -278,7 +278,8 @@ select.form-control:not([size]):not([multiple]){
     margin: 0;
 }
 .notes li{
-    margin-bottom: 5px;
+    margin-bottom: 9px;
+    line-height: 14px;
 }
 .notes li:last-child{
     margin-bottom: 5px;

@@ -93,7 +93,7 @@
 <body>
 <div class="mobile-header">
     <a href="#" class="menu-toggle"><i class="fas fa-bars"></i></a>
-    <p>Seller Details</p>
+    <p>Guardian Details</p>
     <div class="right-controls">
         <a href="home.html"><img src="images/Home.svg" alt=""></a>
         <a href="splash.html"><img src="images/logout.svg" alt=""></a>
@@ -116,7 +116,7 @@
 </div>
 <div class="content-wrapper">
     <div class="signin-wrapper">
-        <h4>Seller Details</h4>
+        <h4>Guardian Details</h4>
         <a href="#" class="download-link-pdf">Land Record Details<i class="fas fa-link"></i></a>
         <div class="app-txt-no">
             Application Txn No : <span>20458s24</span>
@@ -154,67 +154,32 @@
         <div class="card">
             <div class="card-header">
                 <a class="card-link" data-toggle="collapse" href="#collapseOne">
-                    <i class="fas fa-chevron-circle-up"></i> Personal Details
+                    <i class="fas fa-chevron-circle-up"></i> Guardian Details
                 </a>
             </div>
             <div id="collapseOne" class="collapse show" data-parent="#accordion">
                 <div class="card-body">
-                    <div class="details-wp">
-                        <ul>
-                            <li>
-                                <lable>Aadhaar No. <sup style="color: red">*</sup></lable>
-                                <p>2514 1254 1545</p>
-                            </li>
-                            <li>
-                                <lable>Name (in Telugu) <sup style="color: red">*</sup></lable>
-                                <p>Venkatapur</p>
-                            </li>
-                            <li style="width: 100%">
-                                <lable>Father/Husband's Name (in Telugu) <sup style="color: red">*</sup></lable>
-                                <p>Venkatapur</p>
-                            </li>
-                            <li>
-                                <lable>Social Status <sup style="color: red">*</sup></lable>
-                                <p>SC</p>
-                            </li>
-                            <li>
-                                <lable>Gender <sup style="color: red">*</sup></lable>
-                                <p>Male</p>
-                            </li>
-                        </ul>
-                    </div>
 
                     <form action="">
                         <div class="form-group">
-                            <label>Name (in English)<sup style="color: red;">*</sup></label>
+                            <label>Aadhaar No.<sup style="color: red;">*</sup></label>
                             <input type="text" class="form-control" placeholder="Enter Name">
                         </div>
                         <div class="form-group">
-                            <label>Father/Husband's Name(In English) <sup style="color: red;">*</sup></label>
+                            <label>Name <sup style="color: red;">*</sup></label>
                             <input type="text" class="form-control" placeholder="Enter Father/Husband Name">
+                        </div>
+                        <div class="form-group">
+                            <label>Father/Husband's Name <sup style="color: red;">*</sup></label>
+                            <select class="form-control"  style="margin-bottom: 5px">
+                                <option value="0" selected="">Select Relation</option>
+                                <option value="1">Option</option>
+                            </select>
+                            <input type="text" class="form-control" placeholder="Enter Name">
                         </div>
                         <div class="form-group">
                             <label>Age <sup style="color: red;">*</sup></label>
                             <input type="text" class="form-control" placeholder="Enter Age">
-                        </div>
-                        <div class="form-group">
-                            <label>Occupation <sup style="color: red;">*</sup></label>
-                            <input type="text" class="form-control" placeholder="Enter Age">
-                        </div>
-                        <div class="form-group">
-                            <label>PAN No. <sup style="color: red;">*</sup></label>
-                            <select class="form-control" name="" id="" style="margin-bottom: 5px">
-                                <option value="0" selected="">Yes</option>
-                                <option value="1">No</option>
-                            </select>
-                            <input type="text" class="form-control" placeholder="Enter PAN Number">
-                        </div>
-                        <div class="form-group">
-                            <label>Form-60/61 <Submitted></Submitted> <sup style="color: red;">*</sup></label>
-                            <select class="form-control" name="" id="" style="margin-bottom: 5px">
-                                <option value="0" selected="">Form 60</option>
-                                <option value="1">Form 61</option>
-                            </select>
                         </div>
                     </form>
                 </div>
@@ -223,20 +188,12 @@
         <div class="card">
             <div class="card-header">
                 <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
-                    <i class="fas fa-chevron-circle-up"></i>   Communication Address Details
+                    <i class="fas fa-chevron-circle-up"></i> Communication Address Details
                 </a>
             </div>
             <div id="collapseTwo" class="collapse show" data-parent="#accordion">
                 <div class="card-body">
-                    <form action="guardian.html">
-                        <div class="form-group">
-                            <label>House No.<sup style="color: red;">*</sup></label>
-                            <input type="text" class="form-control" placeholder="Enter House Name">
-                        </div>
-                        <div class="form-group">
-                            <label>Locality <sup style="color: red;">*</sup></label>
-                            <input type="text" class="form-control" placeholder="Enter Locality">
-                        </div>
+                    <form action="family%20members%20details%20step%203.html">
                         <div class="form-group">
                             <label>Select State <sup style="color: red;">*</sup></label>
                             <select class="form-control" name="" id="" style="margin-bottom: 5px">
@@ -264,6 +221,14 @@
                                 <option value="0" selected="">Select</option>
                                 <option value="1">Option</option>
                             </select>
+                        </div>
+                        <div class="form-group">
+                            <label>House No.<sup style="color: red;">*</sup></label>
+                            <input type="text" class="form-control" placeholder="Enter House Name">
+                        </div>
+                        <div class="form-group">
+                            <label>Locality <sup style="color: red;">*</sup></label>
+                            <input type="text" class="form-control" placeholder="Enter Locality">
                         </div>
                         <div class="form-group">
                             <label>Mobile Number <sup style="color: red;">*</sup></label>
