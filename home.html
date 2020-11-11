@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="css/google-font.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/font-awesome.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Integrated Land Records Management System</title>
+
+
+    <style>
+        .row-home a{
+            display: block;
+            background: #ffffff;
+            padding: 13px;
+            margin-bottom: 10px; 
+            font-size: 14px;
+            position: relative;
+            padding-right: 50px;
+            color: #538924;
+            padding-right: 45px;
+            padding-left: 45px;
+        }
+        .row-home a .fas{
+            position: absolute;
+            right: 18px;
+            color: #538924;
+            top: 50%;
+            margin-top: -7px;
+        }
+        .row-home a  img{
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            margin-top: -14px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="mobile-header">
+    <a href="#" class="menu-toggle"><i class="fas fa-bars"></i></a>
+    <p>Home</p>
+    <div class="right-controls">
+        <a href="home.html"><img src="images/Home.svg" alt=""></a>
+        <a href="splash.html"><img src="images/logout.svg" alt=""></a>
+    </div>
+</div>
+
+<div class="sidebar">
+    <div class="app-brand">
+        <img src="images/telangana_logo.png" alt="img">
+        <p>login</p>
+        <button type="button" class="menu-toggle"><i class="far fa-times-circle"></i></button>
+    </div>
+    <ul>
+        <li><a href="login.html">Slot booking for Citizen</a></li>
+        <li><a href="Land-Details-Search.html">Land Details Search</a></li>
+        <li><a href="Prohibited-Lands.html">Prohibited Lands</a></li>
+        <li><a href="Encumbrance-Details.html">Encumbrance Details</a></li>
+        <li><a href="View-market-value-of-lands-for-Stamp-Duty.html">View market value of lands for Stamp Duty</a></li>
+    </ul>
+</div>
+<div class="content-wrapper">
+    <div class="row-home">
+        <a class="box-radius" href="login.html"><img src="images/calendar.svg" alt=""> Slot booking for Citize <i class="fas fa-arrow-right"></i></a>
+        <a class="box-radius" href="#"><img src="images/binoculars.svg" alt=""> Land Details Search <i class="fas fa-arrow-right"></i></a>
+        <a class="box-radius" href="#"><img src="images/hourglass.svg" alt=""> Prohibited Lands <i class="fas fa-arrow-right"></i></a>
+        <a class="box-radius" href="#"><img src="images/file.svg" alt="">Encumbrance Details <i class="fas fa-arrow-right"></i></a>
+        <a class="box-radius" href="#"><img src="images/location.svg" alt="">View market value of lands for Stamp Duty <i class="fas fa-arrow-right"></i></a>
+    </div>
+</div>
+
+</div>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-3.2.1.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".menu-toggle").click(function(){
+            $(".sidebar").toggleClass("open");
+        });
+    });
+</script>
+</body>
+</html>

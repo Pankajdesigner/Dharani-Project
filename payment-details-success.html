@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="css/google-font.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/font-awesome.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Integrated Land Records Management System</title>
+
+
+    <style>
+        .signin-wrapper h4{
+            color: #538924;
+            font-size: 20px;
+            margin-top: 15px;
+            margin-bottom: 3px;
+        }
+        .signin-wrapper p{
+            font-size: 14px;
+        }
+        .captcha{
+            width: 116px;
+            position: relative;
+            top: 2px;
+        }
+        .f-link{
+            display: block;
+            margin-left: 0;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .download-link-pdf{
+            margin-top: 8px;
+            display: block;
+        }
+        .download-link-pdf .fas{
+            position: relative;
+            top: 1px;
+            left: 2px;
+        }
+        .app-txt-no{
+            background: #fff;
+            margin-top: 5px;
+            padding: 7px 14px;
+            font-size: 13px;
+            font-weight: 500;
+            border-radius: 5px;
+        }
+        .app-txt-no span{
+            color: red;
+        }
+        .details-wp ul{
+            padding: 0px;
+            margin: 0px;
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+        .details-wp ul li{
+            margin-bottom: 12px;
+            width: 100%;
+            margin-right: 5px;
+        }
+        .details-wp ul li lable{
+            font-size: 12px;
+            display: block;
+            color: black;
+            line-height: 14px;
+            font-weight: 500;
+        }
+        .details-wp ul li p{
+            margin: 0px;
+            font-size: 12px;
+        }
+        .form-group {
+            margin-bottom: 10px;
+        }
+        .form-control {
+            font-size: 12px;
+            padding: .375rem 5px;
+        }
+        label{
+            font-size: 12px;
+        }
+        .form-check-inline .form-check-input{
+            position: relative;
+            top: 2px;
+        }
+        .form-check-inline{
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="mobile-header">
+    <a href="#" class="menu-toggle"><i class="fas fa-bars"></i></a>
+    <p>Payment Details</p>
+    <div class="right-controls">
+        <a href="home.html"><img src="images/Home.svg" alt=""></a>
+        <a href="splash.html"><img src="images/logout.svg" alt=""></a>
+    </div>
+</div>
+
+<div class="sidebar">
+    <div class="app-brand">
+        <img src="images/telangana_logo.png" alt="img">
+        <p>DHARANI</p>
+        <button type="button" class="menu-toggle"><i class="far fa-times-circle"></i></button>
+    </div>
+    <ul>
+        <li><a href="login.html">Slot booking for Citize</a></li>
+        <li><a href="Land-Details-Search.html">Land Details Search</a></li>
+        <li><a href="Prohibited-Lands.html">Prohibited Lands</a></li>
+        <li><a href="Encumbrance-Details.html">Encumbrance Details</a></li>
+        <li><a href="View-market-value-of-lands-for-Stamp-Duty.html">View market value of lands for Stamp Duty</a></li>
+    </ul>
+</div>
+<div class="content-wrapper">
+    <div id="accordion" class="accordion" style="margin-top: 0px">
+        <div class="card">
+            <div class="card-header">
+                <a class="card-link" data-toggle="collapse" href="#collapseOne" style="color: green">
+                    <i class="fas fa-check-circle"></i> Payment Successful
+                </a>
+            </div>
+            <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                <div class="card-body">
+                    <div class="details-wp">
+                        <ul>
+                            <li>
+                                <lable>Application No</lable>
+                                <p>5421515265</p>
+                            </li>
+                            <li>
+                                <lable>Service Name</lable>
+                                <p>Registration</p>
+                            </li>
+                            <li>
+                                <lable>Total Amount (INR)</lable>
+                                <p>655645</p>
+                            </li>
+                            <li>
+                                <lable>Payment Date & Time</lable>
+                                <p>20-10-2020 12:30PM</p>
+                            </li>
+                            <li>
+                                <lable>Remitter Name</lable>
+                                <p>Praneeth</p>
+                            </li>
+                            <li>
+                                <lable>Payment Status</lable>
+                                <p style="color: green"><b>Success</b></p>
+                            </li>
+                            <li>
+                                <lable>e-Challan</lable>
+                                <p>8996648</p>
+                            </li>
+                            <li>
+                                <lable>Passcode</lable>
+                                <p>SFCd52</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <form action="Citizen-Dashboard.html">
+
+                        <div class="text-right">
+                            <button type="submit" class="btn btn-success btn-block" style="margin-top: 5px;">Go To Dashboard</button>
+                        </div>
+
+                        <div class="notes">
+                            <ul>
+                                <li>For Offline Payment (Cash / Challan / Demand Draft / Cheque) please generate offline Challan receipt and proceed to ant designated SBI Branch</li>
+                                <li>For Online payment please note down Challanno and passcode for future communication</li>
+                                <li>Do not share your passcode with others</li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-3.2.1.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".menu-toggle").click(function(){
+            $(".sidebar").toggleClass("open");
+        });
+    });
+</script>
+</body>
+</html>

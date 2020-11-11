@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="css/google-font.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/font-awesome.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Integrated Land Records Management System</title>
+
+    <style>
+        .row-home a{
+            display: block;
+            background: #ffffff;
+            padding: 13px;
+            margin-bottom: 10px;
+            font-size: 14px;
+            position: relative;
+            padding-right: 50px;
+            color: #538924;
+            padding-right: 45px;
+            padding-left: 45px;
+        }
+        .coming-soon-wp{
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+        .coming-soon-wp h4 {
+            color: #538924;
+            font-size: 26px;
+            text-transform: uppercase;
+        }
+        .coming-soon-wp a {
+            color: #fff;
+            background: #538924;
+            padding: 8px 22px;
+            margin-top: 10px;
+            display: inline-block;
+            font-size: 15px;
+            border-radius: 5px;
+            box-shadow: 0px 3px 10px rgb(0 0 0 / 32%);
+        }
+    </style>
+</head>
+<body>
+<div class="mobile-header">
+    <a href="#" class="menu-toggle"><i class="fas fa-bars"></i></a>
+    <p>Coming Soon</p>
+    <div class="right-controls">
+        <a href="home.html"><img src="images/Home.svg" alt=""></a>
+        <a href="splash.html"><img src="images/logout.svg" alt=""></a>
+    </div>
+</div>
+
+<div class="sidebar">
+    <div class="app-brand">
+        <img src="images/telangana_logo.png" alt="img">
+        <p>login</p>
+        <button type="button" class="menu-toggle"><i class="far fa-times-circle"></i></button>
+    </div>
+    <ul>
+        <li><a href="login.html">Slot booking for Citizen</a></li>
+        <li><a href="Land-Details-Search.html">Land Details Search</a></li>
+        <li><a href="Prohibited-Lands.html">Prohibited Lands</a></li>
+        <li><a href="Encumbrance-Details.html">Encumbrance Details</a></li>
+        <li><a href="View-market-value-of-lands-for-Stamp-Duty.html">View market value of lands for Stamp Duty</a></li>
+    </ul>
+</div>
+<div class="content-wrapper">
+    <div class="coming-soon-wp">
+        <div class="text-center" style="width: 100%">
+            <h4>Coming Soon</h4>
+            <a href="home.html">Back To Home</a>
+        </div>
+    </div>
+</div>
+
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-3.2.1.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".menu-toggle").click(function(){
+            $(".sidebar").toggleClass("open");
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,388 @@
+body{
+    font-family: 'Roboto';
+    font-size: 14px;
+}
+a, a:hover, a:focus{
+    text-decoration: none;
+}
+.mobile-header{
+    background: url("../images/header-bg-small.jpg");
+    color: #ffffff;
+    padding: 8px 10px;
+    display: flex;
+    align-items: center;
+}
+.mobile-header .right-controls{
+    margin-left: auto;
+}
+.mobile-header .right-controls a{
+    margin: 0;
+    padding: 0px 6px;
+    display: inline-block;
+}
+.mobile-header a{
+    color: #fff;
+    padding: 10px 5px 8px 0;
+    font-size: 18px;
+    margin-right: 10px;
+}
+.mobile-header p{
+    font-weight: 500;
+    margin: 0;
+    font-size: 15px;
+}
+.content-wrapper{
+    padding: 10px;
+    height: calc(100vh - 61px);
+    overflow: auto;
+    background-image: url(../images/bg_top.png);
+    background-size: cover;
+}
+.sidebar{
+    position: fixed;
+    left: -300px;
+    top: 0px;
+    z-index: 1111;
+    transition: 0.5s;
+    width: 250px;
+    height: 100vh;
+    background: #538924;
+    color: #ffff;
+}
+.sidebar.open{
+    left: 0;
+    transition: 0.5s;
+    box-shadow: 0 4px 18px rgb(0 0 0 / 41%);
+}
+.sidebar ul{
+    padding: 0;
+    margin: 0;
+}
+.sidebar li{
+    list-style: none;
+}
+.sidebar li a{
+    color: #fff;
+    padding: 15px 15px;
+    display: block;
+    border-bottom:1px solid rgb(255 255 255 / 12%);
+    font-size: 14px;
+    line-height: 16px;
+}
+.app-brand{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(255 255 255 / 22%);
+}
+.app-brand button{
+    margin-left: auto;
+    font-size: 21px;
+    margin-right: 10px;
+    color: #fff;
+    padding: 0;
+    background: transparent;
+    border: none;
+}
+.app-brand button:focus{
+    outline: none;
+    border: none;
+}
+.app-brand img{
+    width: 43px;
+}
+.app-brand p{
+    margin: 0;
+    margin-left: 10px;
+}
+label{
+    display: inline-block;
+    margin-bottom: 2px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.btn{
+   font-size: 14px;
+}
+.form-control{
+    font-size: 14px;
+    border: 1px solid #c9d6ce;
+}
+.form-group{
+    margin-bottom: 15px;
+}
+.form-control:focus{
+    border-color: #319e60;
+    box-shadow: none;
+}
+.btn-success{
+    background: #538924;
+    border: none;
+}
+.title-4{
+    color: #000000;
+    font-size: 14px;
+    margin-top: 25px;
+    margin-bottom: 11px;
+    text-transform: uppercase;
+}
+.card-link{
+    color: #000;
+    font-weight: 500;
+}
+.card-link .fas{
+    color: green;
+    font-size: 19px;
+    position: relative;
+    top: 2px;
+    margin-right: 7px;
+}
+.card-header {
+    padding: .75rem .75rem;
+    background-color: rgb(255 255 255);
+    border-radius: 6px 6px 0 0;
+}
+.card{
+    margin-bottom: 10px;
+    border-radius: 6px;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
+    -ms-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
+}
+.card-body{
+    padding: 15px;
+}
+.accordion{
+    margin-top: 20px;
+}
+.box-radius{
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
+    -ms-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
+}
+.table{
+    font-size: 12px;
+}
+.width-1100{
+    min-width: 960px;
+    vertical-align: middle;
+}
+.table-mobile td{
+    padding: 5px;
+    vertical-align: middle;
+}
+.table-mobile th{
+    padding: .75rem 5px;
+    background: #538924;
+    color: #fff;
+    font-weight: 400;
+    border: 1px solid rgb(255 255 255 / 18%);
+}
+.table-mobile .form-control{
+    height: 25px;
+    font-size: 12px;
+    border-radius: 4px;
+}
+.table-mobile input[type=checkbox], .table-mobile input[type=radio]{
+    box-sizing: border-box;
+    padding: 0;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 2px;
+}
+
+
+.wizard {
+    margin-left: 30px;
+    position: relative;
+}
+.v-line {
+    width: 1px;
+    background-color: #ccc;
+    position: absolute;
+    margin-left: -15px;
+    margin-top: 20px;
+    height: 184px;
+}
+.step {
+    padding: 7px 0;
+    position: relative;
+    display: block;
+    color: #000;
+}
+.step.active{
+    color: #538924;
+}
+.step.active .step-number{
+  background: #538924;
+  color: #ffffff;
+}
+.step.completed{
+    color: #538924;
+}
+.step.completed .step-number{
+    border: 1px solid #538924;
+    color: #538924;
+    background: #fff;
+}
+.step.completed .fas{
+    font-size: 11px;
+    position: relative;
+    top: -1px;
+}
+.step-number {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    position: absolute;
+    margin-left: -25px;
+    top: 7px;
+    text-align: center;
+ }
+.step span:last-child{
+    position: relative;
+    left: 2px;
+    top: 0px;
+}
+select.form-control:not([size]):not([multiple]){
+    height: auto;
+}
+.btn-delete{
+    font-size: 13px;
+    padding: 3px 8px;
+}
+.add-m{
+    font-size: 12px;
+    padding: 4px 9px;
+    float: right;
+    margin-bottom: 10px;
+}
+.notes{
+    font-size: 12px;
+    color: red;
+    margin-top: 20px;
+    background: #ffefef;
+    padding: 13px;
+}
+.notes ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0;
+}
+.notes li{
+    margin-bottom: 5px;
+}
+.notes li:last-child{
+    margin-bottom: 5px;
+    margin-bottom: 0px;
+}
+.notes h6{
+    font-size: 14px;
+}
+
+
+.slot-radio{
+    display: flex;
+}
+.container-rd {
+    display: block;
+    position: relative;
+    padding-left: 0;
+    margin-bottom: 0px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 25%;
+    height: 40px;
+}
+
+/* Hide the browser's default radio button */
+.container-rd input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #e9ecef;
+    border-radius: 0;
+    text-align: center;
+    font-size: 13px;
+    border: 1px solid #d6d6d6;
+    line-height: 40px;
+}
+
+/* On mouse-over, add a grey background color */
+.container-rd:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container-rd input:checked ~ .checkmark {
+    background-color: #538924;
+    color: #fff;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container-rd input:checked ~ .checkmark:after {
+    display: block;
+}
+.time-big-lable{
+    text-align: center;
+    padding: 7px;
+    background: #538924;
+    color: #fff;
+    font-weight: 400;
+}
+.width-720 {
+    min-width: 720px;
+}
+
+.modal-header{
+    padding: 15px;
+}
+.modal-title{
+    color: green;
+    font-size: 15px;
+}
+.modal-header .close {
+    padding: 15px;
+}
+.fill-title{
+    background: #538924;
+    color: #fff;
+    margin: 0;
+    padding: 6px 8px;
+    margin-top: 0;
+    font-size: 13px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+.v-middle td, .v-middle th {
+    vertical-align: middle !important;
+}

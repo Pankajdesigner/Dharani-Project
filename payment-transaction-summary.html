@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="css/google-font.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/font-awesome.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Integrated Land Records Management System</title>
+
+
+    <style>
+        .signin-wrapper h4{
+            color: #538924;
+            font-size: 20px;
+            margin-top: 15px;
+            margin-bottom: 3px;
+        }
+        .signin-wrapper p{
+            font-size: 14px;
+        }
+        .captcha{
+            width: 116px;
+            position: relative;
+            top: 2px;
+        }
+        .f-link{
+            display: block;
+            margin-left: 0;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .download-link-pdf{
+            margin-top: 8px;
+            display: block;
+        }
+        .download-link-pdf .fas{
+            position: relative;
+            top: 1px;
+            left: 2px;
+        }
+        .app-txt-no{
+            background: #fff;
+            margin-top: 5px;
+            padding: 7px 14px;
+            font-size: 13px;
+            font-weight: 500;
+            border-radius: 5px;
+        }
+        .app-txt-no span{
+            color: red;
+        }
+        .details-wp ul{
+            padding: 0px;
+            margin: 0px;
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+        .details-wp ul li{
+            margin-bottom: 7px;
+            width: 48%;
+            margin-right: 5px;
+        }
+        .details-wp ul li lable{
+            font-size: 12px;
+            display: block;
+            color: black;
+            line-height: 14px;
+            font-weight: 500;
+        }
+        .details-wp ul li p{
+            margin: 0px;
+            font-size: 12px;
+        }
+        .form-radio-wp{
+            margin-top: 10px;
+        }
+        .form-check-input{
+            width: 18px;
+            height: 18px;
+            position: relative !important;
+            top: 4px;
+        }
+    </style>
+</head>
+<body>
+<div class="mobile-header">
+    <a href="#" class="menu-toggle"><i class="fas fa-bars"></i></a>
+    <p>Payment Transaction Summary</p>
+    <div class="right-controls">
+        <a href="home.html"><img src="images/Home.svg" alt=""></a>
+        <a href="splash.html"><img src="images/logout.svg" alt=""></a>
+    </div>
+</div>
+
+<div class="sidebar">
+    <div class="app-brand">
+        <img src="images/telangana_logo.png" alt="img">
+        <p>DHARANI</p>
+        <button type="button" class="menu-toggle"><i class="far fa-times-circle"></i></button>
+    </div>
+    <ul>
+        <li><a href="login.html">Slot booking for Citize</a></li>
+        <li><a href="Land-Details-Search.html">Land Details Search</a></li>
+        <li><a href="Prohibited-Lands.html">Prohibited Lands</a></li>
+        <li><a href="Encumbrance-Details.html">Encumbrance Details</a></li>
+        <li><a href="View-market-value-of-lands-for-Stamp-Duty.html">View market value of lands for Stamp Duty</a></li>
+    </ul>                                
+</div>
+<div class="content-wrapper">
+    <div class="signin-wrapper">
+        <h4>Payment transaction summary</h4>
+        <div class="app-txt-no">
+            Application Txn No : <span>20458s24</span>
+        </div>
+        <hr>
+        <div class="wizard">
+            <div class="v-line"></div>
+            <a href="" class="step completed">
+                <span class="step-number"><i class="fas fa-check"></i> </span>
+                <span>Get Started</span>
+            </a>
+            <a href="#" class="step completed">
+                <span class="step-number"><i class="fas fa-check"></i> </span>
+                <span>Seller</span>
+            </a>
+            <a href="#" class="step completed">
+                <span class="step-number"><i class="fas fa-check"></i></span>
+                <span>Seller Family Member Details</span>
+            </a>
+            <a href="#" class="step completed">
+                <span class="step-number"><i class="fas fa-check"></i></span>
+                <span>Buyer</span>
+            </a>
+            <a href="" class="step completed">
+                <span class="step-number"><i class="fas fa-check"></i></span>
+                <span>Buyer Family Member Details</span>
+            </a>
+            <a href="" class="step completed">
+                <span class="step-number"><i class="fas fa-check"></i></span>
+                <span>Payment</span>
+            </a>
+        </div>
+    </div>
+    <div id="accordion" class="accordion">
+        <div class="card">
+            <div class="card-header">
+                <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                    <i class="fas fa-chevron-circle-up"></i> Summary
+                </a>
+            </div>
+            <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                <div class="card-body">
+                    <div class="text-left">
+                        <a href="payment-transaction-summary.html" type="submit" class="btn btn-success" style="margin-top: 5px;">View Transaction Summary Report
+                            <i class="far fa-file-pdf" style="margin-left: 5px"></i>
+                        </a>
+                    </div>
+                    <lable style="margin-top: 13px; display: block; font-size: 14px; font-weight: 500;">
+                        Have you verified information present in transaction summary receipt? <span style="color: red">*</span>
+                    </lable>
+                    <div class="form-radio-wp">
+                        <div class="form-check-inline">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="optradio">Yes
+                            </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="optradio">No
+                            </label>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="text-right">
+                        <a href="generate-echallan.html" type="submit" class="btn btn-success" style="margin-top: 5px;">Proceed For Payment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-3.2.1.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".menu-toggle").click(function(){
+            $(".sidebar").toggleClass("open");
+        });
+    });
+</script>
+</body>
+</html>

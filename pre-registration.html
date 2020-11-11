@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="css/google-font.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/font-awesome.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Integrated Land Records Management System</title>
+
+
+    <style>
+        .signin-wrapper h4{
+            color: #319e60;
+            font-size: 20px;
+            margin-top: 15px;
+            margin-bottom: 3px;
+        }
+        .signin-wrapper p{
+            font-size: 14px;
+        }
+        .captcha{
+            width: 116px;
+            position: relative;
+            top: 2px;
+        }
+        .f-link{
+            display: block;
+            margin-left: 0;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .download-link-pdf{
+            margin-top: 8px;
+            display: block;
+        }
+        .download-link-pdf .fas{
+            position: relative;
+            top: 1px;
+            left: 2px;
+        }
+        .app-txt-no{
+            background: #fff;
+            margin-top: 5px;
+            padding: 7px 14px;
+            font-size: 13px;
+            font-weight: 500;
+            border-radius: 5px;
+        }
+        .app-txt-no span{
+            color: red;
+        }
+        .details-wp ul{
+            padding: 0px;
+            margin: 0px;
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+        .details-wp ul li{
+            margin-bottom: 7px;
+            width: 48%;
+            margin-right: 5px;
+        }
+        .details-wp ul li lable{
+            font-size: 12px;
+            display: block;
+            color: black;
+            line-height: 14px;
+            font-weight: 500;
+        }
+        .details-wp ul li p{
+            margin: 0px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+<div class="mobile-header">
+    <a href="#" class="menu-toggle"><i class="fas fa-bars"></i></a>
+    <p>Pre Registration</p>
+    <div class="right-controls">
+        <a href="home.html"><img src="images/Home.svg" alt=""></a>
+        <a href="splash.html"><img src="images/logout.svg" alt=""></a>
+    </div>
+</div>
+
+<div class="sidebar">
+    <div class="app-brand">
+        <img src="images/telangana_logo.png" alt="img">
+        <p>DHARANI</p>
+        <button type="button" class="menu-toggle"><i class="far fa-times-circle"></i></button>
+    </div>
+    <ul>
+        <li><a href="login.html">Slot booking for Citize</a></li>
+        <li><a href="Land-Details-Search.html">Land Details Search</a></li>
+        <li><a href="Prohibited-Lands.html">Prohibited Lands</a></li>
+        <li><a href="Encumbrance-Details.html">Encumbrance Details</a></li>
+        <li><a href="View-market-value-of-lands-for-Stamp-Duty.html">View market value of lands for Stamp Duty</a></li>
+    </ul>                                
+</div>
+<div class="content-wrapper">
+    <div class="signin-wrapper">
+        <h4>Personal Details</h4>
+        <a href="#" class="download-link-pdf">Information required for Citizen Slot booking <i class="fas fa-link"></i></a>
+        <div class="app-txt-no">
+            Application Txn No : <span>20458s24</span>
+        </div>
+        <hr>
+        <form action="">
+            <div class="form-group">
+                <label>Nature Of Deed: spa</label>
+                <select class="form-control" name="" id="">
+                    <option value="0" selected>Sale</option>
+                    <option value="1">option 1</option>
+                    <option value="2">option 1</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Nature Of Sub Deed:</label>
+                <select class="form-control" name="" id="">
+                    <option value="0" selected>Sale Deed</option>
+                    <option value="1">option 1</option>
+                    <option value="2">option 1</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>PPB Number:</label>
+                <input type="text" class="form-control" placeholder="Enter PPB Number">
+            </div>
+            <div class="text-right">
+                <button type="submit" class="btn btn-success">Fetch</button>
+                <button type="submit" class="btn btn-success" style="margin-left: 5px;">Reset</button>
+            </div>
+        </form>
+    </div>
+    <div id="accordion" class="accordion">
+        <div class="card">
+            <div class="card-header">
+                <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                    <i class="fas fa-chevron-circle-up"></i> Property Details
+                </a>
+            </div>
+            <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                <div class="card-body">
+                    <div class="details-wp">
+                        <ul>
+                            <li>
+                                <lable>District</lable>
+                                <p>Mulugu</p>
+                            </li>
+                            <li>
+                                <lable>Mandal</lable>
+                                <p>Venkatapur</p>
+                            </li>
+                            <li>
+                                <lable>Village</lable>
+                                <p>Village</p>
+                            </li>
+                            <li>
+                                <lable>Khata No.</lable>
+                                <p>254</p>
+                            </li>
+                            <li>
+                                <lable>Pattadar Name</lable>
+                                <p>Yogesh Kumar</p>
+                            </li>
+                            <li>
+                                <lable>Father/Husband's Name</lable>
+                                <p>Rakesh Kumar</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <h4 style="font-size: 15px;">Select Property</h4>
+                    <div class="table-responsive-sm">
+                        <table class="table table-bordered width-1100 table-mobile table-striped">
+                        <thead>
+                        <tr>
+                            <th class="text-center">select</th>
+                            <th class="text-center">S.No.</th>
+                            <th>Survey No./Sub-Division No</th>
+                            <th>Extent Owned (Ac. Gts)</th>
+                            <th>Transacted Extent (Ac Gts)</th>
+                            <th>Consideration Value (Rs)</th>
+                            <th>Market Value (Rs)</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="text-center"><input type="checkbox"></td>
+                            <td class="text-center">1</td>
+                            <td>199-1</td>
+                            <td>1.3215</td>
+                            <td><input type="text" class="form-control"></td>
+                            <td><input type="text" class="form-control"></td>
+                            <td><input type="text" class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <td class="text-center"><input type="checkbox"></td>
+                            <td class="text-center">2</td>
+                            <td>199-1</td>
+                            <td>1.3215</td>
+                            <td><input type="text" class="form-control"></td>
+                            <td><input type="text" class="form-control"></td>
+                            <td><input type="text" class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <td class="text-center"><input type="checkbox"></td>
+                            <td class="text-center">3</td>
+                            <td>199-1</td>
+                            <td>1.3215</td>
+                            <td><input type="text" class="form-control"></td>
+                            <td><input type="text" class="form-control"></td>
+                            <td><input type="text" class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <td class="text-center"><input type="checkbox"></td>
+                            <td class="text-center">4</td>
+                            <td>199-1</td>
+                            <td>1.3215</td>
+                            <td><input type="text" class="form-control"></td>
+                            <td><input type="text" class="form-control"></td>
+                            <td><input type="text" class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                            <td class="text-right"><b>Total</b></td>
+                            <td><input type="text" class="form-control"></td>
+                            <td><input type="text" class="form-control"></td>
+                            <td><input type="text" class="form-control"></td>
+                            <td><input type="text" class="form-control"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    </div>
+                    <div class="text-right">
+                        <button type="submit" class="btn btn-success" style="margin-top: 5px;">Proceed</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                    <i class="fas fa-chevron-circle-up"></i>   Four Boundary Details
+                </a>
+            </div>
+            <div id="collapseTwo" class="collapse show" data-parent="#accordion">
+                <div class="card-body">
+                    <div class="table-responsive-sm">
+                        <table class="table table-bordered width-1100 table-mobile table-striped">
+                            <thead>
+                            <tr>
+                                <th style="width: 168px;">Survey No./Sub-Division No.</th>
+                                <th>North <span style="color: red">*</span></th>
+                                <th>South <span style="color: red">*</span></th>
+                                <th>East <span style="color: red">*</span></th>
+                                <th>West <span style="color: red">*</span></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>2154-2</td>
+                                <td>
+                                    <select class="form-control" name="" id="">
+                                        <option value="0" selected="">Select Boundary Type</option>
+                                        <option value="1">option 1</option>
+                                        <option value="2">option 1</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select class="form-control" name="" id="">
+                                        <option value="0" selected="">Select Boundary Type</option>
+                                        <option value="1">option 1</option>
+                                        <option value="2">option 1</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select class="form-control" name="" id="">
+                                        <option value="0" selected="">Select Boundary Type</option>
+                                        <option value="1">option 1</option>
+                                        <option value="2">option 1</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select class="form-control" name="" id="">
+                                        <option value="0" selected="">Select Boundary Type</option>
+                                        <option value="1">option 1</option>
+                                        <option value="2">option 1</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+
+                    </div>
+                    <div class="text-right">
+                        <a href="seller-details-step-2.html" class="btn btn-success" style="margin-top: 5px;">Proceed</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-3.2.1.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".menu-toggle").click(function(){
+            $(".sidebar").toggleClass("open");
+        });
+    });
+</script>
+</body>
+</html>

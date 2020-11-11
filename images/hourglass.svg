@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="28" viewBox="0 0 28 28">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_16" data-name="Rectangle 16" width="28" height="28" transform="translate(17 196)" fill="none" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="hourglass" transform="translate(-17 -196)" clip-path="url(#clip-path)">
+    <g id="hourglass-2" data-name="hourglass" transform="translate(-21 200)">
+      <g id="Group_35" data-name="Group 35" transform="translate(44)">
+        <path id="Path_3" data-name="Path 3" d="M56.148,8.955a7.949,7.949,0,0,0,2.1-5.354V1.566h2.533V0H44V1.566h2.533V3.6a7.949,7.949,0,0,0,2.1,5.354,9.5,9.5,0,0,0,1.123,1.065,9.5,9.5,0,0,0-1.123,1.065,7.948,7.948,0,0,0-2.1,5.354v2.035H44V20.04H60.778V18.474H58.245V16.439a7.948,7.948,0,0,0-2.1-5.354,9.5,9.5,0,0,0-1.123-1.065A9.5,9.5,0,0,0,56.148,8.955ZM48.115,1.566h8.547V3.131H48.115Zm8.547,16.909H48.115V16.909h8.547ZM53.269,10.7A7.425,7.425,0,0,1,55,12.162a6.439,6.439,0,0,1,1.571,3.181h-8.36a6.44,6.44,0,0,1,1.571-3.181A7.428,7.428,0,0,1,51.506,10.7a.778.778,0,0,0,0-1.368,7.425,7.425,0,0,1-1.728-1.459A6.439,6.439,0,0,1,48.209,4.7h8.36A6.44,6.44,0,0,1,55,7.878a7.428,7.428,0,0,1-1.726,1.458.778.778,0,0,0,0,1.368Z" transform="translate(-44)" fill="#538925"/>
+      </g>
+    </g>
+  </g>
+</svg>

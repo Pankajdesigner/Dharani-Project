@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="css/google-font.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/font-awesome.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Integrated Land Records Management System</title>
+
+
+    <style>
+        .signin-wrapper h4{
+            color: #538924;
+            font-size: 20px;
+            margin-top: 15px;
+            margin-bottom: 3px;
+        }
+        .signin-wrapper p{
+            font-size: 14px;
+        }
+        .download-link-pdf .fas{
+            position: relative;
+            top: 1px;
+            left: 2px;
+        }
+        .app-txt-no{
+            background: #fff;
+            margin-top: 5px;
+            padding: 7px 14px;
+            font-size: 13px;
+            font-weight: 500;
+            border-radius: 5px;
+        }
+        .app-txt-no span{
+            color: red;
+        }
+        .details-wp ul{
+            padding: 0px;
+            margin: 0px;
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+        .details-wp ul li{
+            margin-bottom: 7px;
+            width: 48%;
+            margin-right: 5px;
+        }
+        .details-wp ul li lable{
+            font-size: 12px;
+            display: block;
+            color: black;
+            line-height: 14px;
+            font-weight: 500;
+        }
+        .details-wp ul li p{
+            margin: 0px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+<div class="mobile-header">
+    <a href="#" class="menu-toggle"><i class="fas fa-bars"></i></a>
+    <p>Generate Document</p>
+    <div class="right-controls">
+        <a href="home.html"><img src="images/Home.svg" alt=""></a>
+        <a href="splash.html"><img src="images/logout.svg" alt=""></a>
+    </div>
+</div>
+
+<div class="sidebar">
+    <div class="app-brand">
+        <img src="images/telangana_logo.png" alt="img">
+        <p>DHARANI</p>
+        <button type="button" class="menu-toggle"><i class="far fa-times-circle"></i></button>
+    </div>
+    <ul>
+        <li><a href="login.html">Slot booking for Citize</a></li>
+        <li><a href="Land-Details-Search.html">Land Details Search</a></li>
+        <li><a href="Prohibited-Lands.html">Prohibited Lands</a></li>
+        <li><a href="Encumbrance-Details.html">Encumbrance Details</a></li>
+        <li><a href="View-market-value-of-lands-for-Stamp-Duty.html">View market value of lands for Stamp Duty</a></li>
+    </ul>                                
+</div>
+<div class="content-wrapper">
+    <div class="signin-wrapper">
+        <h4>Pre Registration</h4>
+        <div class="app-txt-no">
+            Application Txn No : <span>20458s24</span>
+        </div>
+    </div>
+    <div id="accordion" class="accordion">
+        <div class="card">
+            <div class="card-header">
+                <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                    <i class="fas fa-chevron-circle-up"></i> Documents
+                </a>
+            </div>
+            <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                <div class="card-body">
+                    <h4 style="font-size: 15px;">Transaction Receipt Details</h4>
+                    <div class="table-responsive-sm">
+                        <table class="table table-bordered table-mobile">
+                        <thead>
+                        <tr>
+                            <th class="text-center" style="width: 50px">S.No.</th>
+                            <th>Document Type</th>
+                            <th class="text-center" style="width: 55px;">Action</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-center">1</td>
+                                 <td>e-Challan</td>
+                                <td class="text-center">
+                                    <button type="button" class="btn btn-primary btn-delete">
+                                        <i class="fas fa-download"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">2</td>
+                                <td>Transaction Summary</td>
+                                <td class="text-center">
+                                    <button type="button" class="btn btn-primary btn-delete">
+                                        <i class="fas fa-download"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>
+
+                    <h4 style="font-size: 15px;">Document Details</h4>
+                    <div class="table-responsive-sm">
+                        <table class="table table-bordered table-mobile">
+                            <thead>
+                            <tr>
+                                <th class="text-center" style="width: 50px">S.No.</th>
+                                <th >Name</th>
+                                <th class="text-center" style="width: 70px;">Draft Doc.</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="text-center">1</td>
+                                <td>undertaking by transferor</td>
+                                <td class="text-center">
+                                    <button type="button" class="btn btn-primary btn-delete">
+                                        <i class="fas fa-download"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1" checked>
+                        <label class="custom-control-label" for="customCheck1">We have read and verified the undertaking.</label>
+                    </div>
+
+                    <hr>
+                    <div class="text-right">
+                        <a href="#" type="submit" class="btn btn-primary" style="margin-top: 5px; font-size: 12px">Generate Document</a>
+                        <a href="slot-book.html" type="submit" class="btn btn-success" style="margin-top: 5px; font-size: 12px">Proceed For Slot Booking</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-3.2.1.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".menu-toggle").click(function(){
+            $(".sidebar").toggleClass("open");
+        });
+    });
+</script>
+</body>
+</html>
