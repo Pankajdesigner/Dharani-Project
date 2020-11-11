@@ -131,7 +131,7 @@ label{
     font-weight: 500;
 }
 .card-link .fas{
-    color: green;
+    color: #538924;
     font-size: 19px;
     position: relative;
     top: 2px;
@@ -179,6 +179,7 @@ label{
     background: #538924;
     color: #fff;
     font-weight: 400;
+    line-height: 13px;
     border: 1px solid rgb(255 255 255 / 18%);
 }
 .table-mobile .form-control{
@@ -385,4 +386,13 @@ select.form-control:not([size]):not([multiple]){
 }
 .v-middle td, .v-middle th {
     vertical-align: middle !important;
+}
+.signin-wrapper h4 {
+    color: #538924 !important;
+}
+.app-txt-no span {
+    color: #538924 !important;
+}
+.application-list{
+    list-style: none;
 }
