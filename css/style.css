@@ -53,7 +53,9 @@ a, a:hover, a:focus{
     width: 250px;
     height: 100vh;
     background: #538924;
+    background-image: url(../images/sidebar-bg.png);
     color: #ffff;
+    background-size: 275px;
 }
 .sidebar.open{
     left: 0;
@@ -76,10 +78,10 @@ a, a:hover, a:focus{
     line-height: 16px;
 }
 .app-brand{
-    padding: 10px;
+    padding: 8.5px 10px;
     display: flex;
     align-items: center;
-    border-bottom: 1px solid rgb(255 255 255 / 22%);
+    border-bottom: 1px solid rgb(255 255 255 / 41%);
 }
 .app-brand button{
     margin-left: auto;
